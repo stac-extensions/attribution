@@ -30,7 +30,7 @@ The fields in the table below can be used in these parts of STAC documents:
 
 | Field Name  | Type   | Description                                  |
 | ----------- | ------ | -------------------------------------------- |
-| attribution | string | **REQUIRED**. A short test intended for presentation to a user, for example, in a corner of a map. |
+| attribution | string | **REQUIRED**. A short text intended for presentation to a user, for example, in a corner of a map. |
 
 The attribution is a short text intended for presentation to a user, for example, in a corner of a map.
 Parts of the text can be links to other resources if additional information is needed.
