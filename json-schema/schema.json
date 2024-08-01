@@ -82,7 +82,9 @@
           {
             "properties": {
               "item_assets": {
-                "$ref": "#/definitions/validate_assets"
+                "additionalProperties": {
+                  "$ref": "#/definitions/validate_properties"
+                }
               }
             }
           },
@@ -92,12 +94,17 @@
           {
             "properties": {
               "summaries": {
-                "type": [
-                  "array",
-                  "object"
-                ],
-                "items": {
-                  "$ref": "#/definitions/attribution"
+                "type": "object",
+                "properties": {
+                  "attribution": {
+                    "type": [
+                      "array",
+                      "object"
+                    ],
+                    "items": {
+                      "$ref": "#/definitions/attribution"
+                    }
+                  }
                 }
               }
             }
@@ -129,13 +136,7 @@
             ],
             "properties": {
               "summaries": {
-                "type": [
-                  "array",
-                  "object"
-                ],
-                "items": {
-                  "$ref": "#/definitions/attribution"
-                }
+                "$ref": "#/definitions/require_properties"
               }
             }
           }
